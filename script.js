@@ -366,10 +366,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Actualizar marcadores
     const updateScores = () => {
         document.querySelector('#pokeTokens').innerHTML = `
-            <span class="material-icons">star</span>${pokeTokens}/10
+            <img src="assets/images/poketoken-unlocked.png" alt="PokéToken" height="30"> ${pokeTokens}/10
+
         `;
         document.querySelector('#powerMuls').innerHTML = `
-            <span class="material-icons">bolt</span>${powerMuls}/10
+            <img src="assets/images/powermul.png" alt="PowerMul" height="30"> ${powerMuls}/10
         `;
     };
 
