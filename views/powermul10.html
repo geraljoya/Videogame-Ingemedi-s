@@ -1,0 +1,115 @@
+<div class="container-fluid">
+  <div class="row align-items-center vh-85 bg-dialogs">
+    <!-- Guardiana -->
+    <div class="col-3 text-center character-container start-0">
+      <img
+        src="assets/images/guardiana-plano-medio.png"
+        alt="Guardiana"
+        class="img-fluid character-img guardiana active"
+      />
+    </div>
+
+    <!-- Diálogo y contenido central -->
+    <div class="col-6 m-0 p-0">
+      <div class="dialogue-box p-4">
+        <div id="dialogue-content" class="fade-up">
+          <p class="fw-bolder text-center">
+            ¡Hoy conquistas este nivel aprendiz a Ingemedi@!
+          </p>
+          <p>
+            Son muchas industrias dónde nos podemos desarrollar
+            <span class="fw-bolder">Veamos algunas más</span>
+          </p>
+        </div>
+
+        <button id="nextStep" class="btn btn-primary mt-3">Siguiente</button>
+
+        <!-- Información (inicialmente oculta) -->
+        <div id="information-section" class="d-none">
+          <h3 id="information-title" class="typing-container">
+            Industria Cultural, Comunicación y Otras
+          </h3>
+          <div id="information-content" class="fade-up">
+            <p>
+              En los sectores cultural y comunicativo, los ingenieros multimedia
+              crean museos interactivos y producen noticias multimedia,
+              facilitando el acceso dinámico a la información.
+            </p>
+            <ul class="p">
+              <li>Periodista multimedia</li>
+              <li>Director de comunicación digital</li>
+              <li>Productor de contenido web</li>
+              <li>Desarrollador de aplicaciones móviles informativas</li>
+              <li>Editor digital</li>
+            </ul>
+            <p>
+              The Smithsonian Institution, Museo del Louvre, y BBC son
+              referentes en el uso de multimedia para la cultura y la
+              comunicación.
+            </p>
+          </div>
+          <button id="startChallenge" class="btn btn-primary mt-3">
+            Responder Acertijo
+          </button>
+        </div>
+
+        <!-- Acertijo (inicialmente oculto) -->
+        <div id="challenge-section" class="d-none">
+          <h3 id="challenge-title" class="typing-container">
+            Industria Cultural, Comunicación y Otras
+          </h3>
+          <div id="challenge-content" class="fade-up">
+            <p>
+              Un ingeniero multimedia está trabajando en la creación de un museo
+              interactivo virtual
+              <strong
+                >¿Cuál de las siguientes características sería la más importante
+                para mejorar la experiencia del visitante?</strong
+              >
+            </p>
+          </div>
+          <ul id="challenge-options" class="list-unstyled mt-3">
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Incluir textos detallados sobre cada obra de arte.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="true">
+              Desarrollar una experiencia de realidad aumentada donde los
+              visitantes puedan interactuar con las obras.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Proporcionar acceso a vídeos largos sobre los artistas y sus
+              vidas.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resultado final (inicialmente oculto) -->
+        <div id="result-section" class="d-none">
+          <h4 id="result-title" class="fw-bold">
+            ¡Correcto! Has conseguido el Powermul:
+          </h4>
+          <div id="result-content" class="subtle-pulse">
+            <h3 class="typing-container">CultureWeaver</h3>
+            <p>
+              La habilidad para crear experiencias inmersivas en museos y
+              aplicaciones culturales mediante el uso de realidad aumentada y
+              tecnologías interactivas.
+            </p>
+          </div>
+          <button id="returnToCity" class="btn btn-primary mt-3">
+            ¡Quiero más!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar -->
+    <div class="col-3 text-center character-container end-0">
+      <img
+        src="assets/images/avatar-plano-medio.png"
+        alt="Avatar"
+        class="img-fluid character-img learner inactive"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,115 @@
+<div class="container-fluid">
+  <div class="row align-items-center vh-85 bg-dialogs">
+    <!-- Guardiana -->
+    <div class="col-3 text-center character-container start-0">
+      <img
+        src="assets/images/guardiana-plano-medio.png"
+        alt="Guardiana"
+        class="img-fluid character-img guardiana active"
+      />
+    </div>
+
+    <!-- Diálogo y contenido central -->
+    <div class="col-6 m-0 p-0">
+      <div class="dialogue-box p-4">
+        <div id="dialogue-content" class="fade-up">
+          <p class="fw-bolder text-center">¡Muy bien aprendiz a Ingemedi@!</p>
+          <p>
+            Entre nuestras tipologías multimedia
+            <span class="fw-bolder">¿Qué usamos para comercializar?</span>
+          </p>
+        </div>
+        <button id="nextStep" class="btn btn-primary mt-3">Siguiente</button>
+
+        <!-- Información (inicialmente oculta) -->
+        <div id="information-section" class="d-none">
+          <h3 id="information-title" class="typing-container">
+            Multimedia Comercial
+          </h3>
+          <div id="information-content" class="fade-up">
+            <p>
+              Su objetivo es la promoción y venta de productos o servicios
+              mediante medios interactivos. Ejemplos: Amazon, Shopify.
+            </p>
+            <ul class="p">
+              <li>
+                <strong>Interactividad orientada a la conversión:</strong>
+                Incluye elementos interactivos como catálogos digitales, filtros
+                de productos y simuladores de compras para mejorar la
+                experiencia del usuario y aumentar las ventas.
+              </li>
+              <li>
+                <strong>Integración con sistemas de pago y logística:</strong>
+                Facilita procesos de compra en línea, desde la selección del
+                producto hasta el pago y envío, como en sitios de comercio
+                electrónico.
+              </li>
+              <li>
+                <strong>Personalización: </strong> Usa datos de usuario para
+                ofrecer productos y promociones personalizados según los hábitos
+                y preferencias de compra.
+              </li>
+            </ul>
+          </div>
+          <button id="startChallenge" class="btn btn-primary mt-3">
+            Responder Acertijo
+          </button>
+        </div>
+
+        <!-- Acertijo (inicialmente oculto) -->
+        <div id="challenge-section" class="d-none">
+          <h3 id="challenge-title" class="typing-container">
+            Multimedia Comercial
+          </h3>
+          <div id="challenge-content" class="fade-up">
+            <p>
+              En el campo de la multimedia comercial<strong>
+                ¿Cuál de estos elementos es crucial para aumentar la conversión
+                en una tienda en línea?</strong
+              >
+            </p>
+          </div>
+          <ul id="challenge-options" class="list-unstyled mt-3">
+            <li class="option btn btn-light my-2 w-100" data-correct="true">
+              Ofrecer simuladores de productos para que el usuario pueda
+              visualizar cómo se verán.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Crear artículos de blog sobre temas relacionados con el producto.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Incluir vídeos explicativos sobre el uso del producto.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resultado final (inicialmente oculto) -->
+        <div id="result-section" class="d-none">
+          <h4 id="result-title" class="fw-bold">
+            ¡Correcto! Has conseguido el Powermul:
+          </h4>
+          <div id="result-content" class="subtle-pulse">
+            <h3 class="typing-container">VizSell</h3>
+            <p>
+              La habilidad de crear simuladores interactivos que permiten a los
+              usuarios visualizar productos y aumentar las ventas en plataformas
+              comerciales.
+            </p>
+          </div>
+          <button id="returnToCity" class="btn btn-primary mt-3">
+            ¡Quiero más!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar -->
+    <div class="col-3 text-center character-container end-0">
+      <img
+        src="assets/images/avatar-plano-medio.png"
+        alt="Avatar"
+        class="img-fluid character-img learner inactive"
+      />
+    </div>
+  </div>
+</div>

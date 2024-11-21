@@ -1,0 +1,112 @@
+<div class="container-fluid">
+  <div class="row align-items-center vh-85 bg-dialogs">
+    <!-- Guardiana -->
+    <div class="col-3 text-center character-container start-0">
+      <img
+        src="assets/images/guardiana-plano-medio.png"
+        alt="Guardiana"
+        class="img-fluid character-img guardiana active"
+      />
+    </div>
+
+    <!-- Diálogo y contenido central -->
+    <div class="col-6 m-0 p-0">
+      <div class="dialogue-box p-4">
+        <div id="dialogue-content" class="fade-up">
+          <p class="fw-bolder text-center">
+            ¡Ya pasamos la mitad aprendiz a Ingemedi@!
+          </p>
+          <p>
+            Te sorprenderás con todas las industrias dónde impactamos
+            <span class="fw-bolder">¿Ya quieres ver?</span>
+          </p>
+        </div>
+
+        <button id="nextStep" class="btn btn-primary mt-3">Siguiente</button>
+
+        <!-- Información (inicialmente oculta) -->
+        <div id="information-section" class="d-none">
+          <h3 id="information-title" class="typing-container">
+            Industria Tecnológica
+          </h3>
+          <div id="information-content" class="fade-up">
+            <p>
+              El ingeniero multimedia facilita la creación de aplicaciones
+              móviles y plataformas web que mejoran la interacción y
+              funcionalidad digital. Sus soluciones ayudan a optimizar la vida
+              diaria y el acceso a la tecnología.
+            </p>
+            <ul class="p">
+              <li>Diseñador de UI/UX</li>
+              <li>Especialista en realidad virtual (VR)</li>
+              <li>Ingeniero de software multimedia</li>
+              <li>Gestor de proyectos tecnológicos</li>
+            </ul>
+            <p>
+              Google, Apple, y Meta son líderes en la innovación tecnológica,
+              desarrollando plataformas interactivas y experiencias inmersivas.
+            </p>
+          </div>
+          <button id="startChallenge" class="btn btn-primary mt-3">
+            Responder Acertijo
+          </button>
+        </div>
+
+        <!-- Acertijo (inicialmente oculto) -->
+        <div id="challenge-section" class="d-none">
+          <h3 id="challenge-title" class="typing-container">
+            Industria Tecnológica
+          </h3>
+          <div id="challenge-content" class="fade-up">
+            <p>
+              Un ingeniero multimedia está diseñando la interfaz de una nueva
+              aplicación móvil para gestionar tareas
+              <strong
+                >¿Cuál de las siguientes opciones describe mejor una prioridad
+                en su trabajo?</strong
+              >
+            </p>
+          </div>
+          <ul id="challenge-options" class="list-unstyled mt-3">
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Crear gráficos animados con alta resolución.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="true">
+              Optimizar la experiencia de usuario (UX) y la facilidad de
+              navegación.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Asegurarse de que la aplicación tenga múltiples opciones de color.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resultado final (inicialmente oculto) -->
+        <div id="result-section" class="d-none">
+          <h4 id="result-title" class="fw-bold">
+            ¡Correcto! Has conseguido el Powermul:
+          </h4>
+          <div id="result-content" class="subtle-pulse">
+            <h3 class="typing-container">TechCX</h3>
+            <p>
+              La habilidad para optimizar la experiencia de usuario y navegación
+              en entornos digitales.
+            </p>
+          </div>
+          <button id="returnToCity" class="btn btn-primary mt-3">
+            ¡Quiero más!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar -->
+    <div class="col-3 text-center character-container end-0">
+      <img
+        src="assets/images/avatar-plano-medio.png"
+        alt="Avatar"
+        class="img-fluid character-img learner inactive"
+      />
+    </div>
+  </div>
+</div>

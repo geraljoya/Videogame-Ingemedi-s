@@ -1,0 +1,150 @@
+<div
+    class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-success text-light">
+    <header class="typing-container">
+        <h1 class="display-4 fw-bold typing-text" style="color: var(--black); font-family: var(--font-title)">
+            ¡Felicidades, aprendiz a Ingemedi@!
+        </h1>
+    </header>
+    <p class="lead my-4 animate__animated animate__fadeInUp">
+        Has completado tu misión recolectando todos los
+        <strong>PokéTokens</strong> y <strong>Powermuls</strong>. 🎉
+    </p>
+
+    <!-- Barras de progreso generales -->
+    <div class="mb-4 w-75">
+        <!-- Barra de PokéTokens -->
+        <div class="mb-3">
+            <label for="pokeTokensProgress" class="form-label">PokéTokens recolectados:</label>
+            <div class="progress" id="pokeTokensProgress" style="height: 25px">
+                <div class="progress-bar bg-warning text-dark fw-bold" role="progressbar" style="width: 100%"
+                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
+                    10/10
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra de Powermuls -->
+        <div>
+            <label for="powerMulsProgress" class="form-label">Powermuls conseguidos:</label>
+            <div class="progress" id="powerMulsProgress" style="height: 25px">
+                <div class="progress-bar bg-info text-dark fw-bold" role="progressbar" style="width: 100%"
+                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
+                    10/10
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Listado de habilidades desbloqueadas -->
+    <div class="mb-4 w-75">
+        <h3>Habilidades desbloqueadas</h3>
+        <div class="row">
+            <!-- Columna 1 -->
+            <div class="col-12 col-md-6">
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <strong>Creatividad</strong>
+                        <div class="progress" style="height: 20px">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-3">
+                        <strong>Tecnología</strong>
+                        <div class="progress" style="height: 20px">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-3">
+                        <strong>Resolución de problemas</strong>
+                        <div class="progress" style="height: 20px">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-3">
+                        <strong>Trabajo en equipo</strong>
+                        <div class="progress" style="height: 20px">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-3">
+                        <strong>Liderazgo</strong>
+                        <div class="progress" style="height: 20px">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="col-12 col-md-6">
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <strong>Adaptabilidad</strong>
+                        <div class="progress" style="height: 20px">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-3">
+                        <strong>Comunicación</strong>
+                        <div class="progress" style="height: 20px">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-3">
+                        <strong>Análisis crítico</strong>
+                        <div class="progress" style="height: 20px">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-3">
+                        <strong>Innovación</strong>
+                        <div class="progress" style="height: 20px">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-3">
+                        <strong>Gestión del tiempo</strong>
+                        <div class="progress" style="height: 20px">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                25%
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón para reiniciar el juego -->
+    <button id="restartGame" class="btn btn-warning btn-lg mt-3 animate__animated animate__pulse animate__infinite">
+        <span class="material-icons">restart_alt</span> Reiniciar juego
+    </button>
+</div>

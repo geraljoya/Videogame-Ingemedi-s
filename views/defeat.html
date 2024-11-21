@@ -1,0 +1,38 @@
+<div
+    class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-danger text-light">
+    <header class="typing-container">
+        <h1 class="display-4 fw-bold typing-text" style="color: var(--black); font-family: var(--font-title);">
+            ¡Oh no, has perdido!
+        </h1>
+    </header>
+    <p class="lead my-4 animate__animated animate__fadeInUp">
+        No lograste completar tu misión esta vez, pero puedes intentarlo nuevamente.
+    </p>
+    <div class="mb-4 w-75">
+        <div class="mb-3">
+            <div class="d-flex align-items-center">
+                <span class="material-icons me-2">star</span>
+                <span>PokéTokens recolectados:</span>
+            </div>
+            <div class="progress" style="height: 25px;">
+                <div class="progress-bar bg-warning text-dark fw-bold" role="progressbar" style="width: 0%;"
+                    aria-valuenow="pokeTokens" aria-valuemin="0" aria-valuemax="10">${pokeTokens}/10</div>
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <div class="d-flex align-items-center">
+                <span class="material-icons me-2">bolt</span>
+                <span>Powermuls conseguidos:</span>
+            </div>
+            <div class="progress" style="height: 25px;">
+                <div class="progress-bar bg-info text-dark fw-bold" role="progressbar" style="width: 0%;"
+                    aria-valuenow="powerMuls" aria-valuemin="0" aria-valuemax="10">${powerMuls}/10</div>
+            </div>
+
+        </div>
+    </div>
+    <button id="restartGame" class="btn btn-warning btn-lg mt-3 animate__animated animate__pulse animate__infinite">
+        <span class="material-icons">restart_alt</span> Reiniciar juego
+    </button>
+</div>

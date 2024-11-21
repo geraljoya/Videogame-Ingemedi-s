@@ -1,0 +1,530 @@
+/* Variables globales */
+:root {
+    --black: #232323;
+    --dark-gray: #474747;
+    --green-primary: #80ED99;
+    --green-secondary: #57CC99;
+    --green-light: #C7F9CC;
+    --yellow-primary: #FFE98F;
+    --yellow-secondary: #FFE375;
+    --purple-accent: #C7BDFF;
+    --orange-accent: #FFC277;
+    --blue-accent: #97EBFF;
+    --red-accent: #FF8383;
+    --text-light: #f5f5f5;
+    --font-title: 'Silkscreen', cursive;
+    --font-body: 'Montserrat', sans-serif;
+    --animation-duration: 2s;
+    --animation-bounce: 0.5s;
+}
+
+/* Global */
+body {
+    font-family: var(--font-body);
+    background-color: var(--black);
+    color: var(--text-light);
+    cursor: url('assets/images/custom-cursor.png'), auto;
+}
+
+/* Cursor*/
+/* Aplicar el cursor personalizado a los botones */
+button,
+a,
+li {
+    cursor: url('assets/images/custom-cursor.png'), pointer !important;
+}
+
+.token.unlocked:hover {
+    cursor: url('assets/images/custom-cursor.png'), pointer;
+}
+
+/* Estilos para botones */
+button {
+    font-family: var(--font-title);
+    background-color: var(--green-primary);
+    border: none;
+    padding: 10px 5%;
+    transition: all 0.3s ease-in-out;
+    color: var(--text-light);
+}
+
+button:hover {
+    background-color: var(--green-secondary) !important;
+    transform: scale(1.05);
+}
+
+.vh-85 {
+    height: 85vh;
+}
+
+.text-danger{
+    color: var(--red-accent) !important;
+}
+
+.btn-danger{
+    background-color: var(--red-accent) !important;
+}
+
+.bg-success
+{
+    background-color: var(--green-secondary) !important;
+}
+
+.bg-danger
+{
+    background-color: var(--red-accent) !important;
+}
+
+.bg-game {
+    background-image: url('assets/images/bg-game-overlay.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    animation: moveBackground 10s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.bg-mediapolis {
+    background-image: url('assets/images/bg-mediapolis-overlay.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-dialogs {
+    background-image: url('assets/images/bg-dialogs.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Mapa */
+
+.mediapolis-container {
+    position: relative;
+    /* Asegura que los elementos hijos sean relativos */
+    margin: 0 auto;
+    /* Centra el contenedor si es necesario */
+    padding: 0;
+    /* Elimina cualquier espacio adicional */
+}
+
+/* Tokens activos y inactivos */
+.token {
+    width: 175px;
+    /* Tamaño ajustable */
+    height: auto;
+    background-size: cover;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out, opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
+    margin: auto;
+}
+
+.token.active {
+    opacity: 1;
+    /* Totalmente visible */
+    filter: grayscale(0);
+    /* Sin escala de grises */
+}
+
+.token.inactive {
+    opacity: 0.9;
+    /* Medio transparente */
+    filter: grayscale(100%);
+    /* Escala de grises */
+}
+
+.token:hover {
+    transform: scale(1.15);
+    /* Agrandamiento al pasar el mouse */
+}
+
+/* Avatar */
+.avatar-city {
+    width: 60px;
+    /* Tamaño del avatar */
+    height: auto;
+    transition: all 0.5s ease-in-out;
+    /* Suavidad en el movimiento */
+    position: absolute;
+    /* Necesario para que el movimiento sea efectivo */
+    z-index: 10;
+    /* Asegura que esté sobre los tokens */
+}
+
+
+/* Feedback */
+.feedback-container {
+    font-family: var(--font-body);
+    background-color: var(--green-light);
+    color: var(--dark-gray);
+    border-top: 2px solid var(--green-primary);
+}
+
+/* Marcadores */
+#pokeTokens,
+#powerMuls {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+/* Infoviews * & Challengeviews */
+
+.character-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.dialogue-box {
+    background-color: var(--black);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px var(--green-light);
+}
+
+.dialogue-box h2, h3 {
+    font-family: var(--font-title);
+    color: var(--purple-accent);
+    text-align: center;
+}
+
+.dialogue-box p, .p {
+    font-family: var(--font-body);
+    color: var(--text-light);
+    text-align: justify;
+    line-height: 30px;
+}
+
+.option:hover
+{
+    transform: scale(1.04);
+    transition: 0.3s all;
+}
+
+/* Imágenes de personajes */
+.character-img {
+    width: 100%;
+    max-width: 400px;
+    opacity: 1;
+    filter: none;
+    transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    filter: none;
+    transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.inactive {
+    opacity: 1;
+    filter: grayscale(100%);
+    transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+/* Pantalla de victoria */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeInDown {
+    animation-name: fadeInDown;
+}
+
+.animate__fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.animate__pulse {
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Pantalla de derrota */
+@keyframes defeatBackground {
+    0% {
+        background-color: #ff6b6b;
+        /* Rojo claro */
+    }
+
+    50% {
+        background-color: #d32f2f;
+        /* Rojo oscuro */
+    }
+
+    100% {
+        background-color: #ff6b6b;
+        /* Rojo claro */
+    }
+}
+
+.bg-danger {
+    animation: defeatBackground 3s infinite;
+}
+
+/* Animación para el texto y botones */
+.animate__fadeInDown {
+    animation-name: fadeInDown;
+}
+
+.animate__fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.animate__pulse {
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+
+
+/*Modales*/
+
+.modal-content {
+    background-color: var(--dark-gray);
+    color: var(--text-light);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--yellow-primary);
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+.btn-close {
+    color: var(--yellow-primary);
+}
+
+.btn-primary {
+    background-color: var(--green-primary);
+    border: none;
+}
+
+
+/* Animaciones generales */
+
+* {
+    transition: all 0.4s ease-in-out;
+}
+
+/* Animación tipoo */
+
+.typing-container {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--dark-gray);
+    animation: typing var(--animation-duration) steps(40, end) forwards, hide-caret 0.5s step-end var(--animation-duration);
+}
+
+.typing-text {
+    font-family: var(--font-title);
+    color: var(--green-primary);
+}
+
+/* Clave de animación typing */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Clave de animación para el cursor */
+@keyframes hide-caret {
+    0%, 99% {
+        border-color: var(--black);
+    }
+    100% {
+        border-color: transparent;
+    }
+}
+
+
+/* Animación fade-up */
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    animation: fade-up var(--animation-duration) ease-out;
+}
+
+/* Animación de bounce */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.bounce {
+    animation: bounce var(--animation-bounce) infinite;
+}
+
+.bounce-on-hover:hover {
+    animation: bounce var(--animation-bounce);
+}
+
+/* Animación de latido leve */
+@keyframes subtle-pulse {
+    0% {
+        transform: scale(1); /* Tamaño original */
+    }
+    50% {
+        transform: scale(1.02); /* Expande ligeramente */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño original */
+    }
+}
+
+/* Aplicación de la animación */
+.subtle-pulse {
+    animation: subtle-pulse var(--animation-duration) ease-in-out infinite;
+}
+
+/* Animación en hover, para interactividad */
+.subtle-pulse-hover:hover {
+    animation: subtle-pulse var(--animation-duration) ease-in-out infinite;
+}
+
+/* Queries */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tamaño en tablet */
+@media (max-width: 992px) {
+
+    /* Pantallas menores o iguales a 992px (tablet) */
+    .token {
+        width: 140px;
+        /* Tamaño en tablet */
+    }
+
+    .avatar-city {
+        width: 40px;
+        /* Tamaño en tablet */
+    }
+}
+
+/* Tamaño en celular */
+@media (max-width: 576px) {
+
+    /* Pantallas menores o iguales a 576px (celular) */
+    .token {
+        width: 100px;
+        /* Tamaño en celular */
+    }
+
+    .avatar-city {
+        width: 30px;
+        /* Tamaño en celular */
+    }
+}

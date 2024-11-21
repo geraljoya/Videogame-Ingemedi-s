@@ -1,0 +1,119 @@
+<div class="container-fluid">
+  <div class="row align-items-center vh-85 bg-dialogs">
+    <!-- Guardiana -->
+    <div class="col-3 text-center character-container start-0">
+      <img
+        src="assets/images/guardiana-plano-medio.png"
+        alt="Guardiana"
+        class="img-fluid character-img guardiana active"
+      />
+    </div>
+
+    <!-- Diálogo y contenido central -->
+    <div class="col-6 m-0 p-0">
+      <div class="dialogue-box p-4">
+        <div id="dialogue-content" class="fade-up">
+          <p class="fw-bolder text-center">
+            ¡Cada vez mejor aprendiz a Ingemedi@!
+          </p>
+          <p>
+            Entre las tipologías multimedia algo nos informará
+            <span class="fw-bolder">¿De qué se tratará?</span>
+          </p>
+        </div>
+
+        <button id="nextStep" class="btn btn-primary mt-3">Siguiente</button>
+
+        <!-- Información (inicialmente oculta) -->
+        <div id="information-section" class="d-none">
+          <h3 id="information-title" class="typing-container">
+            Multimedia Informativa
+          </h3>
+          <div id="information-content" class="fade-up">
+            <p>
+              Se enfoca en distribuir información clara y comprensible. Los
+              sitios de noticias y aplicaciones móviles como BBC News o El País
+              son ejemplos.
+            </p>
+            <ul class="p">
+              <li>
+                <strong>Actualización constante:</strong> Los sitios y
+                aplicaciones informativas son dinámicos y se actualizan en
+                tiempo real para ofrecer las últimas noticias y eventos.
+              </li>
+              <li>
+                <strong>Multiformato:</strong>Utiliza diversos formatos (texto,
+                videos, infografías, transmisiones en vivo) para mejorar la
+                comprensión y mantener el interés del lector.
+              </li>
+              <li>
+                <strong>Accesibilidad multiplataforma:</strong> ADisponible en
+                múltiples dispositivos y formatos, lo que permite a los usuarios
+                acceder a la información desde smartphones, tabletas,
+                ordenadores y televisores inteligentes.
+              </li>
+            </ul>
+          </div>
+          <button id="startChallenge" class="btn btn-primary mt-3">
+            Responder Acertijo
+          </button>
+        </div>
+
+        <!-- Acertijo (inicialmente oculto) -->
+        <div id="challenge-section" class="d-none">
+          <h3 id="challenge-title" class="typing-container">
+            Multimedia Informativa
+          </h3>
+          <div id="challenge-content" class="fade-up">
+            <p>
+              En una aplicación de multimedia informativa
+              <strong
+                >¿cuál de los siguientes factores es más importante para
+                asegurar que el usuario reciba las últimas noticias de manera
+                eficiente?</strong
+              >
+            </p>
+          </div>
+          <ul id="challenge-options" class="list-unstyled mt-3">
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Diseño visual atractivo con colores llamativos.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="true">
+              Actualización constante y en tiempo real de las noticias.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Disponibilidad de vídeos largos y detallados sobre los temas.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resultado final (inicialmente oculto) -->
+        <div id="result-section" class="d-none">
+          <h4 id="result-title" class="fw-bold">
+            ¡Correcto! Has conseguido el Powermul:
+          </h4>
+          <div id="result-content" class="subtle-pulse">
+            <h3 class="typing-container">NewsPulse</h3>
+            <p>
+              La habilidad para mantener actualizaciones constantes y en tiempo
+              real en plataformas informativas, asegurando que el usuario reciba
+              las últimas noticias de forma eficiente.
+            </p>
+          </div>
+          <button id="returnToCity" class="btn btn-primary mt-3">
+            ¡Quiero más!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar -->
+    <div class="col-3 text-center character-container end-0">
+      <img
+        src="assets/images/avatar-plano-medio.png"
+        alt="Avatar"
+        class="img-fluid character-img learner inactive"
+      />
+    </div>
+  </div>
+</div>

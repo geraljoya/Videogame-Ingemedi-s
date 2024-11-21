@@ -1,0 +1,119 @@
+<div class="container-fluid">
+  <div class="row align-items-center vh-85 bg-dialogs">
+    <!-- Guardiana -->
+    <div class="col-3 text-center character-container start-0">
+      <img
+        src="assets/images/guardiana-plano-medio.png"
+        alt="Guardiana"
+        class="img-fluid character-img guardiana active"
+      />
+    </div>
+
+    <!-- Diálogo y contenido central -->
+    <div class="col-6 m-0 p-0">
+      <div class="dialogue-box p-4">
+        <div id="dialogue-content" class="fade-up">
+          <p class="fw-bolder text-center">
+            ¡Cada vez más cerca aprendiz a Ingemedi@!
+          </p>
+          <p>
+            Nuestra última tipología multimedia
+            <span class="fw-bolder">¿Cuál crees que es la más invasiva?</span>
+          </p>
+        </div>
+
+        <button id="nextStep" class="btn btn-primary mt-3">Siguiente</button>
+
+        <!-- Información (inicialmente oculta) -->
+        <div id="information-section" class="d-none">
+          <h3 id="information-title" class="typing-container">
+            Multimedia Publicitaria
+          </h3>
+          <div id="information-content" class="fade-up">
+            <p>
+              Empleada en campañas de marketing, combina videos, gráficos
+              animados y contenido interactivo para captar la atención del
+              consumidor (Facebook Ads, YouTube Ads).
+            </p>
+            <ul class="p">
+              <li>
+                <strong>Diseño visual atractivo:</strong> Emplea gráficos de
+                alta calidad, animaciones y efectos visuales que capturan la
+                atención rápidamente.
+              </li>
+              <li>
+                <strong>Contenido interactivo:</strong> Invita al usuario a
+                participar en la publicidad a través de clics, encuestas, juegos
+                o videos interactivos, lo que mejora la retención de la marca.
+              </li>
+              <li>
+                <strong>Segmentación precisa:</strong> Utiliza datos de
+                audiencia para mostrar anuncios personalizados, asegurando que
+                los mensajes publicitarios lleguen a la audiencia adecuada en el
+                momento oportuno.
+              </li>
+            </ul>
+          </div>
+          <button id="startChallenge" class="btn btn-primary mt-3">
+            Responder Acertijo
+          </button>
+        </div>
+
+        <!-- Acertijo (inicialmente oculto) -->
+        <div id="challenge-section" class="d-none">
+          <h3 id="challenge-title" class="typing-container">
+            Multimedia Publicitaria
+          </h3>
+          <div id="challenge-content" class="fade-up">
+            <p>
+              En una campaña de multimedia publicitaria<strong>
+                ¿Qué técnica es más efectiva para captar la atención del público
+                objetivo?
+              </strong>
+            </p>
+          </div>
+          <ul id="challenge-options" class="list-unstyled mt-3">
+            <li class="option btn btn-light my-2 w-100" data-correct="true">
+              Incluir elementos interactivos como encuestas o juegos en los
+              anuncios.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Ofrecer un artículo gratuito al hacer clic en el anuncio.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Utilizar solo imágenes de alta calidad en los banners
+              publicitarios.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resultado final (inicialmente oculto) -->
+        <div id="result-section" class="d-none">
+          <h4 id="result-title" class="fw-bold">
+            ¡Correcto! Has conseguido el Powermul:
+          </h4>
+          <div id="result-content" class="subtle-pulse">
+            <h3 class="typing-container">EngageWave</h3>
+            <p>
+              La habilidad para diseñar anuncios interactivos que invitan al
+              usuario a participar activamente, maximizando el impacto de las
+              campañas publicitarias.
+            </p>
+          </div>
+          <button id="returnToCity" class="btn btn-primary mt-3">
+            ¡Quiero más!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar -->
+    <div class="col-3 text-center character-container end-0">
+      <img
+        src="assets/images/avatar-plano-medio.png"
+        alt="Avatar"
+        class="img-fluid character-img learner inactive"
+      />
+    </div>
+  </div>
+</div>

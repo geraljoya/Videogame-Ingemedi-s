@@ -1,0 +1,111 @@
+<div class="container-fluid">
+  <div class="row align-items-center vh-85 bg-dialogs">
+    <!-- Guardiana -->
+    <div class="col-3 text-center character-container start-0">
+      <img
+        src="assets/images/guardiana-plano-medio.png"
+        alt="Guardiana"
+        class="img-fluid character-img guardiana active"
+      />
+    </div>
+
+    <!-- Diálogo y contenido central -->
+    <div class="col-6 m-0 p-0">
+      <div class="dialogue-box p-4">
+        <div id="dialogue-content" class="fade-up">
+          <p class="fw-bolder text-center">
+            ¡Aún no acabamos aprendiz a Ingemedi@!
+          </p>
+          <p>
+            De esta industria sale este juego
+            <span class="fw-bolder">¿Imaginas cuál puede ser?</span>
+          </p>
+        </div>
+        <button id="nextStep" class="btn btn-primary mt-3">Siguiente</button>
+
+        <!-- Información (inicialmente oculta) -->
+        <div id="information-section" class="d-none">
+          <h3 id="information-title" class="typing-container">
+            Industria de la Educación
+          </h3>
+          <div id="information-content" class="fade-up">
+            <p>
+              El ingeniero multimedia diseña plataformas de aprendizaje en línea
+              y simulaciones interactivas, mejorando la experiencia educativa
+              tanto en el aula como a distancia.
+            </p>
+            <ul class="p">
+              <li>Diseñador de plataformas e-learning</li>
+              <li>Especialista en realidad aumentada</li>
+              <li>Creador de contenido educativo digital</li>
+              <li>Consultor de tecnología educativa</li>
+              <li>Desarrollador de simulaciones educativas</li>
+            </ul>
+            <p>
+              Coursera, Khan Academy, y Google for Education lideran la
+              educación en línea y el uso de multimedia en el aprendizaje.
+            </p>
+          </div>
+          <button id="startChallenge" class="btn btn-primary mt-3">
+            Responder Acertijo
+          </button>
+        </div>
+
+        <!-- Acertijo (inicialmente oculto) -->
+        <div id="challenge-section" class="d-none">
+          <h3 id="challenge-title" class="typing-container">
+            Industria de la Educación
+          </h3>
+          <div id="challenge-content" class="fade-up">
+            <p>
+              Un ingeniero multimedia está creando una simulación educativa para
+              enseñar biología
+              <strong
+                >¿Cuál de las siguientes características mejoraría la
+                experiencia de aprendizaje?</strong
+              >
+            </p>
+          </div>
+          <ul id="challenge-options" class="list-unstyled mt-3">
+            <li class="option btn btn-light my-2 w-100" data-correct="true">
+              Ofrecer una simulación interactiva donde los estudiantes pueden
+              manipular elementos virtuales.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Incluir un video largo con una explicación detallada de cada tema.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Proporcionar un examen al final del curso.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resultado final (inicialmente oculto) -->
+        <div id="result-section" class="d-none">
+          <h4 id="result-title" class="fw-bold">
+            ¡Correcto! Has conseguido el Powermul:
+          </h4>
+          <div id="result-content" class="subtle-pulse">
+            <h3 class="typing-container">LearnShaper</h3>
+            <p>
+              La habilidad para desarrollar simulaciones educativas interactivas
+              que facilitan el aprendizaje práctico.
+            </p>
+          </div>
+          <button id="returnToCity" class="btn btn-primary mt-3">
+            ¡Quiero más!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar -->
+    <div class="col-3 text-center character-container end-0">
+      <img
+        src="assets/images/avatar-plano-medio.png"
+        alt="Avatar"
+        class="img-fluid character-img learner inactive"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,112 @@
+<div class="container-fluid">
+  <div class="row align-items-center vh-85 bg-dialogs">
+    <!-- Guardiana -->
+    <div class="col-3 text-center character-container start-0">
+      <img
+        src="assets/images/guardiana-plano-medio.png"
+        alt="Guardiana"
+        class="img-fluid character-img guardiana active"
+      />
+    </div>
+
+    <!-- Diálogo y contenido central -->
+    <div class="col-6 m-0 p-0">
+      <div class="dialogue-box p-4">
+        <div id="dialogue-content" class="fade-up">
+          <p class="fw-bolder text-center">
+            ¡Estamos a punto de terminar aprendiz a Ingemedi@!
+          </p>
+          <p>
+            Esta industria de seguro es lo que nos hace antojar de todo viendo
+            <span class="fw-bolder">¿Quieres ver mucho más allá?</span>
+          </p>
+        </div>
+
+        <button id="nextStep" class="btn btn-primary mt-3">Siguiente</button>
+
+        <!-- Información (inicialmente oculta) -->
+        <div id="information-section" class="d-none">
+          <h3 id="information-title" class="typing-container">
+            Industria de Publicidad y Marketing
+          </h3>
+          <div id="information-content" class="fade-up">
+            <p>
+              El ingeniero multimedia desarrolla anuncios interactivos y
+              experiencias inmersivas, ayudando a las marcas a captar la
+              atención del público en campañas digitales.
+            </p>
+            <ul class="p">
+              <li>Especialista en marketing digital</li>
+              <li>Productor de contenido audiovisual</li>
+              <li>Analista de medios digitales</li>
+              <li>Creativo publicitario</li>
+              <li>Diseñador gráfico multimedia</li>
+            </ul>
+            <p>
+              Ogilvy, Wunderman Thompson, y Google Ads son líderes en la
+              creación de campañas publicitarias innovadoras.
+            </p>
+          </div>
+          <button id="startChallenge" class="btn btn-primary mt-3">
+            Responder Acertijo
+          </button>
+        </div>
+
+        <!-- Acertijo (inicialmente oculto) -->
+        <div id="challenge-section" class="d-none">
+          <h3 id="challenge-title" class="typing-container">
+            Industria de Publicidad y Marketing
+          </h3>
+          <div id="challenge-content" class="fade-up">
+            <p>
+              Trabajas como ingeniero multimedia en una agencia de marketing
+              digital
+              <strong
+                >¿Cuál de las siguientes técnicas sería la más efectiva para
+                captar la atención del público?</strong
+              >
+            </p>
+          </div>
+          <ul id="challenge-options" class="list-unstyled mt-3">
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Crear gráficos y banners estáticos con textos llamativos.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="true">
+              Producir un anuncio interactivo donde los usuarios puedan
+              participar en un juego.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Ofrecer un extenso documento sobre los beneficios del producto.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resultado final (inicialmente oculto) -->
+        <div id="result-section" class="d-none">
+          <h4 id="result-title" class="fw-bold">
+            ¡Correcto! Has conseguido el Powermul:
+          </h4>
+          <div id="result-content" class="subtle-pulse">
+            <h3 class="typing-container">AdGenius</h3>
+            <p>
+              La habilidad para diseñar anuncios interactivos que capturan la
+              atención del público y maximizan la efectividad de las campañas.
+            </p>
+          </div>
+          <button id="returnToCity" class="btn btn-primary mt-3">
+            ¡Quiero más!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar -->
+    <div class="col-3 text-center character-container end-0">
+      <img
+        src="assets/images/avatar-plano-medio.png"
+        alt="Avatar"
+        class="img-fluid character-img learner inactive"
+      />
+    </div>
+  </div>
+</div>

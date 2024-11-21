@@ -1,0 +1,113 @@
+<div class="container-fluid">
+  <div class="row align-items-center vh-85 bg-dialogs">
+    <!-- Guardiana -->
+    <div class="col-3 text-center character-container start-0">
+      <img
+        src="assets/images/guardiana-plano-medio.png"
+        alt="Guardiana"
+        class="img-fluid character-img guardiana active"
+      />
+    </div>
+
+    <!-- Diálogo y contenido central -->
+    <div class="col-6 m-0 p-0">
+      <div class="dialogue-box p-4">
+        <div id="dialogue-content" class="fade-up">
+          <p class="fw-bolder text-center">
+            ¡No creerás todo lo que viene aprendiz a Ingemedi@!
+          </p>
+          <p>
+            Esta industria es con la que muchas generaciones soñaron y tal vez
+            aún
+            <span class="fw-bolder"
+              >¿Te suena el mundo del entretenimiento?</span
+            >
+          </p>
+        </div>
+
+        <button id="nextStep" class="btn btn-primary mt-3">Siguiente</button>
+
+        <!-- Información (inicialmente oculta) -->
+        <div id="information-section" class="d-none">
+          <h3 id="information-title" class="typing-container">
+            Industria del Entretenimiento
+          </h3>
+          <div id="information-content" class="fade-up">
+            <p>
+              Los ingenieros multimedia crean videojuegos, animaciones y
+              contenido visual para cine y televisión, ofreciendo experiencias
+              más inmersivas y realistas para el público.
+            </p>
+            <ul class="p">
+              <li>Productor de cine y animación</li>
+              <li>Diseñador 3D</li>
+              <li>Sonidista digital</li>
+              <li>Editor de video</li>
+              <li>Desarrollador de videojuegos</li>
+            </ul>
+            <p>
+              Pixar, Ubisoft, y Netflix son referentes en la producción de
+              entretenimiento digital innovador.
+            </p>
+          </div>
+          <button id="startChallenge" class="btn btn-primary mt-3">
+            Responder Acertijo
+          </button>
+        </div>
+
+        <!-- Acertijo (inicialmente oculto) -->
+        <div id="challenge-section" class="d-none">
+          <h3 id="challenge-title" class="typing-container">
+            Industria del Entretenimiento
+          </h3>
+          <div id="challenge-content" class="fade-up">
+            <p>
+              Estás trabajando como ingeniero multimedia en la creación de un
+              videojuego
+              <strong
+                >¿Cuál de las siguientes tareas es parte de tu responsabilidad?
+              </strong>
+            </p>
+          </div>
+          <ul id="challenge-options" class="list-unstyled mt-3">
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Diseñar los niveles y mecánicas de juego.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Programar la física del motor gráfico del juego.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="true">
+              Crear animaciones 3D y efectos visuales.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resultado final (inicialmente oculto) -->
+        <div id="result-section" class="d-none">
+          <h4 id="result-title" class="fw-bold">
+            ¡Correcto! Has conseguido el Powermul:
+          </h4>
+          <div id="result-content" class="subtle-pulse">
+            <h3 class="typing-container">CineCrafter</h3>
+            <p>
+              La habilidad de crear animaciones y efectos visuales
+              impresionantes para videojuegos y medios interactivos.
+            </p>
+          </div>
+          <button id="returnToCity" class="btn btn-primary mt-3">
+            ¡Quiero más!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar -->
+    <div class="col-3 text-center character-container end-0">
+      <img
+        src="assets/images/avatar-plano-medio.png"
+        alt="Avatar"
+        class="img-fluid character-img learner inactive"
+      />
+    </div>
+  </div>
+</div>

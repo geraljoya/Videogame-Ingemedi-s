@@ -1,0 +1,116 @@
+<div class="container-fluid">
+  <div class="row align-items-center vh-85 bg-dialogs">
+    <!-- Guardiana -->
+    <div class="col-3 text-center character-container start-0">
+      <img
+        src="assets/images/guardiana-plano-medio.png"
+        alt="Guardiana"
+        class="img-fluid character-img guardiana active"
+      />
+    </div>
+
+    <!-- Diálogo y contenido central -->
+    <div class="col-6 m-0 p-0">
+      <div class="dialogue-box p-4">
+        <div id="dialogue-content" class="fade-up">
+          <p class="fw-bolder text-center">
+            ¡Comenzamos bien aprendiz a Ingemedi@!
+          </p>
+          <p>
+            Ahora navegaremos las tipologías multimedia
+            <span class="fw-bolder">¿Qué nos educa?</span>
+          </p>
+        </div>
+        <button id="nextStep" class="btn btn-primary mt-3">Siguiente</button>
+
+        <!-- Información (inicialmente oculta) -->
+        <div id="information-section" class="d-none">
+          <h3 id="information-title" class="typing-container">
+            Multimedia Educativa
+          </h3>
+          <div id="information-content" class="fade-up">
+            <p>
+              Orientada a transmitir conocimientos de manera interactiva y
+              atractiva. Ejemplos incluyen plataformas de aprendizaje en línea y
+              simuladores educativos (Duolingo, Coursera).
+            </p>
+            <ul class="p">
+              <li>
+                <strong>Interactividad:</strong> Facilita la participación
+                activa del usuario mediante ejercicios, simulaciones y
+                retroalimentación instantánea.
+              </li>
+              <li>
+                <strong>Accesibilidad:</strong> Disponible en diversas
+                plataformas (móviles, web) para garantizar el acceso a contenido
+                educativo en cualquier momento y lugar.
+              </li>
+              <li>
+                <strong>Personalización del aprendizaje:</strong> Adapta el
+                ritmo y nivel de dificultad de los contenidos según el progreso
+                del usuario, ofreciendo experiencias de aprendizaje
+                personalizadas.
+              </li>
+            </ul>
+          </div>
+          <button id="startChallenge" class="btn btn-primary mt-3">
+            Responder Acertijo
+          </button>
+        </div>
+
+        <!-- Acertijo (inicialmente oculto) -->
+        <div id="challenge-section" class="d-none">
+          <h3 id="challenge-title" class="typing-container">
+            Multimedia Educativa
+          </h3>
+          <div id="challenge-content" class="fade-up">
+            <p>
+              En una plataforma de multimedia educativa
+              <strong
+                >¿Cuál de las siguientes características facilita mejor la
+                personalización del aprendizaje?</strong
+              >
+            </p>
+          </div>
+          <ul id="challenge-options" class="list-unstyled mt-3">
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Actualización constante de contenido.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="true">
+              Adaptación del nivel de dificultad según el progreso del usuario.
+            </li>
+            <li class="option btn btn-light my-2 w-100" data-correct="false">
+              Uso de gráficos y animaciones avanzadas.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resultado final (inicialmente oculto) -->
+        <div id="result-section" class="d-none">
+          <h4 id="result-title" class="fw-bold">
+            ¡Correcto! Has conseguido el Powermul:
+          </h4>
+          <div id="result-content" class="subtle-pulse">
+            <h3 class="typing-container">LearnFlex</h3>
+            <p>
+              La habilidad de personalizar el aprendizaje adaptando el nivel de
+              dificultad según el progreso del usuario.
+            </p>
+          </div>
+          <button id="returnToCity" class="btn btn-primary mt-3">
+            ¡Quiero más!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Avatar -->
+    <div class="col-3 text-center character-container end-0">
+      <img
+        src="assets/images/avatar-plano-medio.png"
+        alt="Avatar"
+        class="img-fluid character-img learner inactive"
+      />
+    </div>
+  </div>
+</div>
